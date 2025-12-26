@@ -1,0 +1,47 @@
+# Agentic Werewolf - Game Configuration
+
+game:
+  player_count: 6
+  discussion_rounds: 3
+  voting: public
+
+# Role distribution (must sum to player_count)
+roles:
+  Werewolf: 2
+  Seer: 1
+  Doctor: 1
+  Villager: 2
+
+# Player configurations
+# Each player gets a name and a model
+players:
+  - name: Alice
+    model: anthropic/claude-sonnet-4
+  - name: Bob
+    model: openai/gpt-4o
+  - name: Charlie
+    model: google/gemini-2.0-flash-001
+  - name: Diana
+    model: anthropic/claude-sonnet-4
+  - name: Eve
+    model: openai/gpt-4o
+  - name: Frank
+    model: google/gemini-2.0-flash-001
+
+# Personality traits pool (2-3 assigned randomly per player)
+personality_traits:
+  energy:
+    - aggressive
+    - passive
+  thinking:
+    - analytical
+    - emotional
+  trust:
+    - trusting
+    - suspicious
+  communication:
+    - verbose
+    - concise
+  social:
+    - leader
+    - follower
