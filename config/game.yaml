@@ -15,18 +15,18 @@ roles:
 # Player configurations
 # Each player gets a name and a model
 players:
-  - name: Alice
-    model: anthropic/claude-sonnet-4
-  - name: Bob
-    model: openai/gpt-4o
-  - name: Charlie
-    model: google/gemini-2.0-flash-001
-  - name: Diana
-    model: anthropic/claude-sonnet-4
-  - name: Eve
-    model: openai/gpt-4o
-  - name: Frank
-    model: google/gemini-2.0-flash-001
+  - name: Claude
+    model: anthropic/claude-sonnet-4.5
+  - name: GPT
+    model: openai/gpt-5.2
+  - name: Gemini
+    model: google/gemini-3-flash-preview
+  - name: Grok
+    model: x-ai/grok-4.1-fast
+  - name: Mistral
+    model: mistralai/mistral-large-2512
+  - name: Llama
+    model: meta-llama/llama-4-maverick
 
 # Personality traits pool (2-3 assigned randomly per player)
 personality_traits:

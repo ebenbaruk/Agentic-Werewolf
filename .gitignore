@@ -61,6 +61,10 @@ htmlcov/
 # Game data
 game_logs/
 game_history/
+games/
 *.db
 *.sqlite
 *.sqlite3
+
+# VS Code history
+.history/

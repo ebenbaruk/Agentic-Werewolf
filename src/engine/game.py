@@ -75,6 +75,9 @@ class Game:
         Args:
             player_configs: List of player configurations with name, model.
         """
+        # Start logging
+        self.logger.start_game()
+
         # Create role pool
         role_pool: list[Role] = []
         for role_name, count in self.config.role_distribution.items():
@@ -460,9 +463,6 @@ class Game:
         Returns:
             The winning team ("village" or "werewolf").
         """
-        # Start logging
-        self.logger.start_game()
-
         # Start game
         self.phase_manager.start_game()
 
